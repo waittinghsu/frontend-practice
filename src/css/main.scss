@@ -1,0 +1,120 @@
+//@import './_variable.scss';
+@import './layout.scss';
+
+.logo {
+  width: 200px;
+}
+
+.navBar {
+  li {
+    color: #3F5D45;
+  }
+  .item {
+    font-size: $font-normal;
+    font-weight: 600;
+  }
+}
+.banner {
+  width: 940px;
+  height: 496px;
+}
+.sibar {
+  width: 300px;
+  font-size: 1.5 * $font-normal;
+  font-weight: 600;
+  &-title {
+    background: #3F5D45;
+    color: white;
+    text-align: center;
+    padding: 16px 102px 16px 102px;
+    white-space: nowrap;
+  }
+  .item {
+    color: #3F5D45;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    &:hover {
+      background: #EAF0ED;
+    }
+  }
+}
+
+.card-group {
+  .card {
+    width: 300px;
+    margin: 0 0 20px 20px;
+    color: #3F4D45;
+    .card-body {
+      .card-title {
+        position: relative;
+      }
+      .card-tag {
+        position: absolute;
+        left: 20px;
+        top:0;
+        width: 36px;
+        height: 107px;
+        background: #3F5D45 0% 0% no-repeat padding-box;
+        span {
+          font-weight: 600;
+          font: normal normal 600 16px/20px PingFang TC;
+          writing-mode: vertical-lr;
+          line-height: 1.2;
+          color: #EAF0ED;
+          letter-spacing: 4px;;
+        }
+      }
+      .card-favor {
+        position: absolute;
+        top: 19px;
+        right: 20px;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .card_content {
+        span {
+          font-size: 20px;
+        }
+        border-right: 1px solid #EAF0ED;
+        border-left: 1px solid #EAF0ED;
+        .name {
+          padding: 14px 33px 14px 33px;
+          border-right: 1px solid #EAF0ED;
+        }
+        .price {
+          padding: 14px 20px 14px 28px;
+          font-weight: 600;
+        }
+        .card-add {
+          background: #EAF0ED;
+          padding: 16px;
+          font-size: 24px;
+          font-weight: 600;;
+        }
+      }
+    }
+  }
+  .pagination {
+    font-size: 24px;
+    .item {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #EAF0ED;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:not(:last-child){
+        border-right: none;
+      }
+    }
+  }
+}
+
+.footer {
+  width: 1024px;
+  height: 116px;
+  background: #3F5D45 0% 0% no-repeat padding-box;
+}

@@ -1,0 +1,67 @@
+#app {
+  width: 940px;
+}
+
+body {
+  line-height: 1;;
+}
+
+ul, li {
+  list-style: none;
+}
+
+$space: 1px;
+$font-normal: 16px;
+
+.d-flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-content {
+   &-center {
+    justify-content: center;
+   }
+   &-between {
+    justify-content: space-between;
+   }
+   &-end {
+     justify-content: flex-end;
+   }
+}
+.align-items {
+  &-center {
+    align-items: center;
+  }
+  &-end {
+    align-items: flex-end;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.mx-30 {
+  margin: 0 30*$space;
+}
+.mb-30 {
+  margin-bottom: 30*$space;
+}
+.mt-30 {
+  margin-top: 30*$space;
+}
+.mb-60{
+ margin-bottom: 60*$space;
+}
+
+.font-weight-600 {
+  font-weight: 600px;
+}
